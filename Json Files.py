@@ -107,22 +107,22 @@
 # Python program to read
 # json file
 
-import json
-
-# Opening JSON file
-f = open('data.json','r')
-
-# returns JSON object as a dictionary
-data = json.load(f)
+# import json
 #
-
-# # Iterating through the json
-# # list
-for i in data['employee']:
- print(i)
-
-# Closing file
-f.close()
+# # Opening JSON file
+# f = open('data.json','r')
+#
+# # returns JSON object as a dictionary
+# data = json.load(f)
+# #
+#
+# # # Iterating through the json
+# # # list
+# for i in data['employee']:
+#  print(i)
+#
+# # Closing file
+# f.close()
 # Python program to write JSON
 # to a file
 
@@ -223,26 +223,26 @@ import json
 
 
 #function to add to JSON
-import json
-def write_json(new_data, filename='data.json'):
-    with open(filename, 'r+') as file:
-        # First we load existing data into a dict.
-        file_data = json.load(file)
-        # Join new_data with file_data inside emp_details
-        file_data["employee"].append(new_data)
-        # Sets file's current position at offset.
-        file.seek(0)
-        # convert back to json.
-        json.dump(file_data, file, indent=4)
-
-# python object to be appended
-y = {
-         "id": "06",
-         "name": "Anirudh",
-         "department": "Software"
-      }
-
-write_json(y)
+# import json
+# def write_json(new_data, filename='data.json'):
+#     with open(filename, 'r+') as file:
+#         # First we load existing data into a dict.
+#         file_data = json.load(file)
+#         # Join new_data with file_data inside emp_details
+#         file_data["employee"].append(new_data)
+#         # Sets file's current position at offset.
+#         file.seek(0)
+#         # convert back to json.
+#         json.dump(file_data, file, indent=4)
+#
+# # python object to be appended
+# y = {
+#          "id": "06",
+#          "name": "Anirudh",
+#          "department": "Software"
+#       }
+#
+# write_json(y)
 
 #Example 8
 #json.dump() method can be used for writing to JSON file. Write data to a file-like object in json format.

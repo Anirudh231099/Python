@@ -19,7 +19,10 @@ for tag in bs_data.find_all('Product', {'name':'TV'}):tag["price"]="Hello!!!"
 # Output the contents of the
 # modified xml file
 print(bs_data.prettify())
-# #Example 2:
+
+
+
+# # #Example 2:
 # # Import the required modules
 # import xmltodict
 # import pprint
@@ -34,6 +37,9 @@ print(bs_data.prettify())
 #
 # # Print the dictionary
 # pprint.pprint(my_dict, indent=4) # Reading complex data in a easier way(pretty print)
+
+
+
 # #Example 3:
 # # Program to convert an xml
 # # file to json file
@@ -59,4 +65,4 @@ print(bs_data.prettify())
 #     # json file
 #     with open("data1.json", "w") as json_file: #JSON->DATA1.JSON
 #         json_file.write(json_data)
-#         #json_file.close()
+#         json_file.close()
